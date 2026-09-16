@@ -1,23 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
     <title>Document</title>
 </head>
+
 <body>
     <p class="pleaseGuess">Please guess a number between 1 and 99</p>
-    <input id="guessInput" type="number">
-    <button id="guessButton">Guess!</button>
-    <button id="playAgainButton">Play Again</button>
-    <p id="guessMessage"></p>
-    <p id="winCount"></p>
-    <p id="lossCount"></p>
-    <p>Previous Guesses: </p>
-    <p id="previousGuesses"></p>
-    <p id="attempts"></p>
+
+    <div class="input-button">
+        <input id="guessInput" type="number">
+        <button id="guessButton">Guess!</button>
+        <button id="playAgainButton">Play Again</button>
+    </div>
+
+    <div class="message-attempts">
+        <p id="guessMessage"></p>
+        <p id="attempts"></p>
+    </div>
+
+    <div>
+        <p>Previous Guesses: </p>
+        <p id="previousGuesses"></p>
+    </div>
+
+    <div>
+        <p id="winCount"></p>
+        <p id="lossCount"></p>
+    </div>
 
     <script src="scripts/main-script.js" defer></script>
 </body>
+
 </html>

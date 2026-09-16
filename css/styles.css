@@ -12,10 +12,54 @@ body {
 }
 
 .pleaseGuess {
-    width: 900px;
-    height: 150px;
-    padding-top: 6%;
+    width: 1200px;
+    height: 145px;
+    padding-top: 5%;
     font-family: 'Trebuchet MS', sans-serif;
+    font-size: 55px;
+    font-weight: bold;
+    background-color: rgba(6, 84, 167, 0.856);
+}
+
+.input-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+#guessInput {
+    height: 95px;
+    width: 550px;
     font-size: 45px;
+    font-weight: bolder;
+    font-family: 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
+#guessButton {
+    height: 95px;
+    width: 200px;
+    background-color: rgba(176, 34, 27, 0.928);
+    border-style: hidden;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+}
+
+#playAgainButton {
+    height: 95px;
+    width: 200px;
+    background-color: rgba(27, 176, 49, 0.928);
+    border-style: hidden;
+    font-size: 30px;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+}
+
+.message-attempts {
+    display: flex;
+    width: 200px;
+    height:100px;
     background-color: white;
 }

@@ -21,6 +21,7 @@ playAgainButton.style.visibility = "hidden";
 guessButton.addEventListener('click', function () {
     guessMessage.style.color = "black";
     previousGuesses.style.visibility = "visible";
+    attempts.style.visibility = "visible";
 
     if (playerAttempts >= 7) {
         guessMessage.style.color = "red";
