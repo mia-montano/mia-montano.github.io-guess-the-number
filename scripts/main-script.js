@@ -1,5 +1,5 @@
 
-let target = 10; //will be random number later
+let target = getRandomInt();
 let playerAttempts = 0;
 let playerGuesses = [];
 let playerWinCount = 0;
@@ -23,14 +23,17 @@ guessButton.addEventListener('click', function () {
     previousGuesses.style.visibility = "visible";
     attempts.style.visibility = "visible";
 
-    if (playerAttempts >= 7) {
+    if (playerAttempts >= 6 && guessInput.value != target) {
         guessMessage.style.color = "red";
         guessMessage.textContent = loseMessage;
+        playerAttempts += 1;
         playerLossCount += 1;
         guessInput.value = "";
         guessButton.style.visibility = "hidden";
         playAgainButton.style.visibility = "visible";
+        playerGuesses.push(guessInput.value);
         previousGuesses.textContent = playerGuesses;
+        attempts.textContent = "You've attempted: " + playerAttempts + " times.";
         lossCount.textContent = "You've lost: " + playerLossCount + " times.";
     }
     else {
@@ -82,7 +85,12 @@ playAgainButton.addEventListener('click', function () {
     playAgainButton.style.visibility = "hidden";
     playerGuesses = [];
     playerAttempts = 0;
-    target = 2; //should also be random
+    target = getRandomInt();
+    guessMessage.textContent = ""
     previousGuesses.style.visibility = "hidden";
     attempts.style.visibility = "hidden";
 })
+
+function getRandomInt() {
+  return Math.floor(Math.random() * (99 - 1 + 1)) + 1;
+}

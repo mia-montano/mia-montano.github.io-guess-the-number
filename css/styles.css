@@ -59,7 +59,39 @@ body {
 
 .message-attempts {
     display: flex;
-    width: 200px;
-    height:100px;
-    background-color: white;
+    margin-top: 45px;
+    gap: 20px;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 25px;
+    font-family: 'Trebuchet MS', sans-serif;
+    width: 650px;
+    height:65px;
+    background-color: rgba(7, 167, 167, 0.856);
+}
+
+.previous-guesses {
+    display: flex;
+    margin-top: 35px;
+    gap: 5px;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 25px;
+    font-family: 'Trebuchet MS', sans-serif;
+    width: 450px;
+    height: 50px;
+    background-color: rgba(2, 68, 139, 0.856);
+}
+
+.track-count {
+    display: flex;
+    margin-top: 35px;
+    gap: 5px;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 23px;
+    font-family: 'Trebuchet MS', sans-serif;
+    width: 600px;
+    height: 50px;
+    background-color: rgba(207, 192, 33, 0.856);
 }
